@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+h1.display-1 {
+  font-weight: 100;
+  font-size: 52.8px;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: 53px;
+}
+.hero-text {
+  margin-top: 10%;
+
+  p {
+    font-size: 14px;
+    color: #ffffff;
+    letter-spacing: 0;
+    line-height: 21px;
+  }
+}
+.apps-img {
+  margin-left: 15%;
+  &-01 {
+    position: absolute;
+    top: 10%;
+  }
+  &-02 {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+  }
+  &-03 {
+    position: absolute;
+    top: 40%;
+  }
+  &-04 {
+    position: absolute;
+    top: 55%;
+  }
+}

@@ -22,6 +22,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
     <title>Mint</title>
   </head>
   <body class="container-fluid">
@@ -46,9 +52,9 @@
             id="navbarTogglerDemo01"
           >
             <img class="navbar-brand" src="/img/logo.svg" width="100" />
-            <ul class="navbar-nav  mt-2 mt-lg-0">
-              <li class="nav-item ml-5">
-                <a class="nav-link" href="#howitworks">How it Works</a>
+            <ul class="navbar-nav align-items-end flex-column mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#howitworks">How it <br />Works</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link disabled" href="#">Pricing</a>
@@ -59,7 +65,7 @@
       </nav>
       <div class="container mt-5">
         <div class="row">
-          <div class=" hero-text col-md-6 animated bounceInLeft">
+          <div class=" hero-text col-md-6 animated bounceInLeft mb-5">
             <h1 class="display-1 ">
               Automated <br />Expense reporting <br />with<span
                 class="text-success"
@@ -68,14 +74,16 @@
                 Mint</span
               >
             </h1>
-            <p>
+            <p class="hero-text-p">
               No more tracking down expense reports, reciepts, or bothering<br />
               your accountant. Take back control with fully automated expense<br />
               reporting
             </p>
-            <button class="btn btn-success mt-5">Download app</button>
+            <button class="download-btn btn btn-success mt-5 mb-5">
+              Download app
+            </button>
           </div>
-          <div class="mobile-app col-md-6 animated bounceInRight">
+          <div class="mobile-app col-md-6 animated bounceInRight mt-5">
             <div class="phone-bg">
               <img src="img/iphone.svg" alt="" />
               <div class="apps-img">
@@ -91,7 +99,7 @@
     </header>
 
     <section class="col-md-12 text-center " style="margin-top:10%;">
-      <h1 class="text-success">Banking just got smarter!</h1>
+      <h1 class="text-success mt-5">Banking just got smarter!</h1>
       <p>
         Mint allows you to automate expense reporting like never<br />
         before. Get real time alerts, view receipts, and stop bugging your<br />
@@ -99,18 +107,14 @@
       </p>
     </section>
 
-    <section class="container mt-5">
+    <section class="container cards mt-5">
       <div class="row text-center">
         <div class=" icon-key col-md-12">
           <div class=" card-columns">
             <!-- key -->
 
             <div class="icon-key-text card text-center col-sm py-5">
-              <img
-                src="/img/key - FontAwesome.svg"
-                alt=""
-                class=" p-5 h-100 w-20"
-              />
+              <i class="fas fa-shield-alt"></i>
               <h2 class="text-success">Safe & secure</h2>
               <p>
                 We have great user interface<br />
@@ -120,11 +124,7 @@
             </div>
 
             <div class="icon-user-text card text-center   py-5 col-sm">
-              <img
-                src="/img/circle - FontAwesome.svg"
-                alt=""
-                class=" p-5 h-100 w-20"
-              />
+              <i class="far fa-user-circle"></i>
               <h2 class="text-warning">User Friendly</h2>
               <p>
                 We have great user interface<br />
@@ -134,11 +134,7 @@
             </div>
 
             <div class="icon-cloud-text card text-center   py-5 col-sm">
-              <img
-                src="/img/mixcloud - FontAwesome.svg"
-                alt=""
-                class="  p-5 h-100 w-20"
-              />
+              <i class="fas fa-cloud"></i>
               <h2 class="text-primary">Cloud hosted</h2>
               <p>
                 We have great user interface<br />
@@ -155,8 +151,8 @@
       </div>
     </section>
 
-    <section class="col-md-12 text-center mb-5 " style="margin:10% 0;">
-      <h1 class="text-success" id="howitworks">How it Works!</h1>
+    <section class="sec-how col-md-12 text-center mb-5 mt-5 ">
+      <h1 class="text-success mt-5" id="howitworks">How it Works!</h1>
       <p>
         Mint allows you to automate expense reporting like never<br />
         before. Get real time alerts, view receipts, and stop bugging your<br />
@@ -166,10 +162,10 @@
 
     <section class="container mt-5" style="margin-bottom:20%;margin-top:20%;">
       <div class="row">
-        <div class="creditcards col-sm">
+        <div class="creditcards col-sm mt-5">
           <img src="/img/cards.svg" alt="" />
         </div>
-        <div class="creditcards-text col-sm">
+        <div class="creditcards-text col-sm mt-5">
           <h1 class="text-success">
             Corporate cards with limits.<br />
             Limitless flexibility
@@ -191,7 +187,7 @@
     <script src="js/blk-design-system.min.js"></script>
   </body>
   <!-- Footer -->
-  <footer class="page-footer font-small mt-5">
+  <footer class="page-footer font-small mt-5 mb-5">
     <!-- Footer Links -->
     <div class="container text-center text-md-left">
       <!-- Grid row -->
@@ -201,7 +197,7 @@
           <!-- Links -->
 
           <img src="/img/logo.svg" alt="" class="mb-2" />
-          <p>
+          <p class="mt-3">
             Ut placerat pharetra ipsum, in dignissim dui dapibus non.
             Suspendisse potenti. Phasellus volutpat nisi quis
           </p>
@@ -291,7 +287,7 @@
     <!-- Footer Links -->
 
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">
+    <div class="footer-copyright text-center py-3 my-5">
       © 2019 Copyright:
       <a href="#"> imekenye</a>
     </div>

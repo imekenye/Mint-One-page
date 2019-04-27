@@ -25,20 +25,33 @@ h1.display-1 {
   &-01 {
     position: absolute;
     top: 10%;
+
+    animation: move 6s infinite;
+    animation-timing-function: ease;
   }
   &-02 {
     position: absolute;
     top: 25%;
     left: 10%;
+    animation: move 3s infinite;
+    animation-timing-function: ease;
   }
   &-03 {
     position: absolute;
     top: 40%;
+    animation: move 6s infinite;
+    animation-timing-function: ease;
   }
   &-04 {
     position: absolute;
     top: 55%;
+    animation: move 3s infinite;
+    animation-timing-function: ease;
   }
+}
+.phone img {
+  animation: movei 6s infinite;
+  animation-timing-function: ease;
 }
 
 i.fas {
@@ -103,5 +116,30 @@ i.far {
 
   footer {
     margin-top: 90px;
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(-10px);
+  }
+
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+@keyframes movei {
+  0% {
+    transform: translateX(-20px);
+  }
+
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(-20px);
   }
 }

@@ -29,22 +29,45 @@ h1.display-1 {
 .apps-img-01 {
   position: absolute;
   top: 10%;
+  -webkit-animation: move 6s infinite;
+          animation: move 6s infinite;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
 .apps-img-02 {
   position: absolute;
   top: 25%;
   left: 10%;
+  -webkit-animation: move 3s infinite;
+          animation: move 3s infinite;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
 .apps-img-03 {
   position: absolute;
   top: 40%;
+  -webkit-animation: move 6s infinite;
+          animation: move 6s infinite;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
 .apps-img-04 {
   position: absolute;
   top: 55%;
+  -webkit-animation: move 3s infinite;
+          animation: move 3s infinite;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+.phone img {
+  -webkit-animation: movei 6s infinite;
+          animation: movei 6s infinite;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
 i.fas {
@@ -101,6 +124,66 @@ i.far {
   }
   footer {
     margin-top: 90px;
+  }
+}
+
+@-webkit-keyframes move {
+  0% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  50% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  100% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+}
+
+@keyframes move {
+  0% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  50% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  100% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+}
+
+@-webkit-keyframes movei {
+  0% {
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+  50% {
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+  }
+  100% {
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+}
+
+@keyframes movei {
+  0% {
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+  50% {
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+  }
+  100% {
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
   }
 }
 /*# sourceMappingURL=main.css.map */
